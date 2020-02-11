@@ -1,0 +1,18 @@
+﻿@model PiesListViewModel
+<h1>Model.CurrentCategory</h1>
+foreach(var pie in Model.Pics)
+{
+<div class= "col-sm-4-col-lg-4-col-md-4">
+    <div class="thumbnail">
+        <img src=" pie.ImagethumbnailUrl" alt="" />
+        <div class="caption">
+            <h2 class="pull-right">pie.PriceToString("c")</h2>
+            <h2>
+                <a>pie.Name</a>
+            </h2>
+            <p>pie.ShortDescription</p>
+        </div>
+    </div>
+</div>
+
+}
